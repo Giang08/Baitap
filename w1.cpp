@@ -122,15 +122,14 @@ void Bai11 ()
     int N;
     cout << "Nhap so N: ";
     cin >> N;
-    if (N < 0) {
-        cout << "Vui long nhap lai: ";
-    } else if (N == 0) {
-        cout <<"0";
+    if (N <= 0) {
+        cout << "Loi cu phap ";
     } else if (N == 1) {
         cout <<"1";
-    } else {
+    }  else {
         cout << N <<" so dau tien cua day fibonacci la: ";
         long long fn, f0 = 0, f1 = 1;
+        cout << f1 << "  ";
         for (int i = 2; i <= N; i++){
             
             fn = f0 + f1;
@@ -479,7 +478,7 @@ void Bai26 ()
 
 int main()
 {
-    Bai9 ();
+    Bai11 ();
 }
     
     

@@ -2,6 +2,17 @@
 #include <math.h>
 using namespace std;
 
+//Bai 1
+int fibonacci( int n)
+{
+    if (n == 1 || n == 2) {
+        return 1;
+    } else {
+        return fibonacci (n - 1) + fibonacci (n - 2);
+    } return 0;
+}
+
+
 //Bai 2,3
 int UCLN (int a, int b)
 {
@@ -24,6 +35,11 @@ int BCNN (int a, int b)
 
 int main ()
 {
+    int n;
+    cout << "Nhap so n: \n";
+    cin >> n;
+    long long fibo = fibonacci (n);
+    cout << "So fibonacii thu " << n <<" la " << fibo <<"\n";
     int a,b;
     cout <<"Hay nhap 2 so a,b: ";
     cin >> a;

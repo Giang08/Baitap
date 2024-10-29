@@ -40,19 +40,7 @@ void Bai1 ()
     cout << endl;
 }
 
-void Bai5 ()
-{
-//Bai 5
-    int a,b,c;
-    int baso[] ={a,b,c};
-    cout <<"Hay nhap 3 so: "; cin >> a >> b >> c;
-    if (baso[0] == baso[2]){
-        cout <<"Day la mang doi xung.";
-    } else {
-        cout <<"Day khong phai mang doi xung";
-    }
-    cout << endl;
-}
+
 int main()
 {
 
