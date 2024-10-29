@@ -1,19 +1,37 @@
 #include <iostream>
-#include <string>
+#include <math.h>
 using namespace std;
-long long fibonacci(int number) {
-    if (number < 0) {
-        return 1;
-    } else if (number == 0) {
-        cout <<"0";
-    } else if (number == 1) {
-        cout <<"1";
+
+//Bai 2,3
+int UCLN (int a, int b)
+{
+    int c = a % b;
+    if (c == 0) {
+        return b;
     } else {
-        cout << number <<" so dau tien cua day fibonacci la: ";
-        return number = (fibonacci(number - 1) + fibonacci(number - 2));
+        return UCLN(b,c);
     }
 }
-int main() 
+
+
+int BCNN (int a, int b)
 {
-    fibonacci(2);
+    return (a * b) / UCLN(a,b);
+}
+
+
+
+
+int main ()
+{
+    int a,b;
+    cout <<"Hay nhap 2 so a,b: ";
+    cin >> a;
+    cin >> b;
+    int ucln = UCLN(a,b);
+    int bcnn = BCNN(a,b);
+    cout <<"UCLN cua 2 so la: " << ucln <<"\n";
+    cout <<"BCNN cua 2 so la: " << bcnn <<"\n";
+    
+ 
 }
