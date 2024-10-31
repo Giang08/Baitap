@@ -418,43 +418,16 @@ void Bai24 ()
 {
     //Bai 24
         int m;
+        int tich;
         cout <<"Hay nhap vao mot so: "; cin >> m;
-        int L= m * m;
-        if (0<m<10){
-            switch (m){
-                case 1:
-                cout <<"Day la bang cuu chuong so 1 " << "1" << " * " << "1" << " = " << L;
-                break;
-                case 2:
-                cout <<"Day la bang cuu chuong so 2 " << "2" << " * " << "2" << " = " << L;
-                break;
-                case 3:
-                cout <<"Day la bang cuu chuong so 3 " << "3" << " * " << "3" << " = " << L;
-                break;
-                case 4:
-                cout <<"Day la bang cuu chuong so 4 " << "4" << " * " << "4" << " = " << L;
-                break;
-                case 5:
-                cout <<"Day la bang cuu chuong so 5 " << "5" << " * " << "5" << " = " << L;
-                break;
-                case 6:
-                cout <<"Day la bang cuu chuong so 6 " << "6" << " * " << "6" << " = " << L;
-                break;
-                case 7:
-                cout <<"Day la bang cuu chuong so 7 " << "7" << " * " << "7" << " = " << L;
-                break;
-                case 8:
-                cout <<"Day la bang cuu chuong so 8 " << "8" << " * " << "8" << " = " << L;
-                break;
-                case 9:
-                cout <<"Day la bang cuu chuong so 9 " << "9" << " * " << "9" << " = " << L;
-                break;
-                default :
-                cout <<"Khong the ho tro";
-                break;
-            }
-        }
-        cout << endl;
+        cout <<"Bang cuu chuong cua " << m <<" la: " << endl;
+        for (int i = 1; i <= 10; i++) {
+            tich = m * i;
+            cout << m << "*" << i <<" = " << tich << endl;
+        } 
+        
+        
+        
 }
 
 void Bai26 ()
@@ -478,7 +451,7 @@ void Bai26 ()
 
 int main()
 {
-    Bai11 ();
+    Bai24 ();
 }
     
     
