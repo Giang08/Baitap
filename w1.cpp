@@ -304,6 +304,30 @@ void Bai17 ()
     }
 }
 
+void Bai18 ()
+{
+    int n;
+    while (true) {
+        cout << "Vui long nhap so n, n > 0: " << endl;
+        cin >> n;
+        if (n > 0) {
+            break;
+        } else {
+            cout << "Vui long nhap lai." << endl;
+            continue;
+        }
+    }
+    
+    cout <<"Day so chia het cho 5 tu 1 den " << n <<" la: ";
+    for (int i = 1; i <= n; i++) {
+        if (i % 5 == 0) {
+            cout << i <<" ";
+        }
+    }
+    
+}
+
+
 void Bai19 ()
 {
 //Bai 19
@@ -430,6 +454,10 @@ void Bai24 ()
         
 }
 
+void Bai25 ()
+{
+   
+}
 void Bai26 ()
 {
 //Bai 26
@@ -451,7 +479,7 @@ void Bai26 ()
 
 int main()
 {
-    Bai24 ();
+    Bai18 ();
 }
     
     

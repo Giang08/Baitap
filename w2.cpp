@@ -9,6 +9,7 @@ bool Lasonguyento(int number) {
     return true;
 }
 
+
 void Bai1 ()
 {
     //Bai 1,2
@@ -28,23 +29,39 @@ void Bai1 ()
     cout << "Gia tri nho nhat la: " << min <<"\n";
     cout << "Gia tri lon nhat la: " << max <<"\n";
     cout << endl;
+}
+
+void Bai3 ()
+{ 
     //Bai 3
+   
+    int dayso[] ={2222, 3, 19, 88, 12321, 28, 4774, 31, 141, 25};
+    int n = sizeof (dayso) / sizeof (dayso[0]);
+    cout << "So nguyen to la: "; 
     for (int i = 0; i <= n; i++ ){
         if(Lasonguyento(dayso[i])) {
-            cout << "So nguyen to la: " << dayso[i] <<" ";
-            cout << endl;
+           cout << dayso[i] << " ";
+           
         }
-    } 
+    }
+}
+
+void Bai4 ()
+{
     //Bai 4
+    int dayso[] ={2222, 3, 19, 88, 12321, 28, 4774, 31, 141, 25};
+    int n = sizeof (dayso) / sizeof (dayso[0]);
     cout << "So trung binh cong cua mang la: " << (dayso[0] + dayso[1] + dayso[2] + dayso[3] + dayso[4] + dayso[5] + dayso[6] + dayso[7] + dayso[8] + dayso[9])/10;
     cout << endl;
+
 }
+    
 
 
 int main()
 {
 
-
+Bai3 ();
     
 
 
