@@ -9,17 +9,6 @@ bool Lasonguyento(int number) {
     return true;
 }
 
-bool DayTangDan (int N[], int n) {
-    //n la kich thuoc mang
-    for (int i = 0; i < n - 1; i++) {
-        if (N[i] > N[i+1]) 
-            return false;
-    }
-    return true;
-}
-
-
-
 
 
 void Bai1 ()
@@ -67,38 +56,9 @@ void Bai4 ()
     cout << endl;
 
 }
-    
-void Bai9 ()
-{
-int N[5];
-cout << "Nhap 5 so: " << endl;
-for (int i = 0; i < 5; i++)
-cin >> N[i];
-if (DayTangDan(N,5)) {
-    cout <<"Day la day tang dan. \n";
-} else {
-    cout <<"Day khong phai day tang dan. \n";
-}
-}
+
 
 int main()
 {
-
-Bai9 ();
-    
-
-
-    
-
-    
-    
-
-    
-
-    
-    
-
-
-    
-    
+    Bai5 ();
 }

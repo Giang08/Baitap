@@ -5,11 +5,10 @@ using namespace std;
 //Bai 1
 int fibonacci( int h)
 {
-    if (h == 1 || h == 2) {
+    if (h == 1 || h == 2) 
         return 1;
-    } else {
+     else 
         return fibonacci (h - 1) + fibonacci (h - 2);
-    } return 0;
 }
 
 
@@ -32,9 +31,14 @@ int BCNN (int a, int b)
 
 int Tong (int m)
 {
+    if (m > 0) {
     long long s;
     s = (m * (m + 1) * (2*m + 1)) / 6;
     return s;
+    } else {
+        return 0;
+    }
+    
 }
 
 int GiaiThua (int n) {
