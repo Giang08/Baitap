@@ -2,7 +2,7 @@
 #include <math.h>
 using namespace std;
 
-//Bai 1
+//Viết hàm tính số Fibonacci dùng phương pháp đệ quy
 int fibonacci( int h)
 {
     if (h == 1 || h == 2) 
@@ -29,30 +29,31 @@ int BCNN (int a, int b)
     return (a * b) / UCLN(a,b);
 }
 
+//Tính tổng bình phương liên tiếp của một số n
 int Tong (int m)
 {
     if (m > 0) {
-    long long s;
-    s = (m * (m + 1) * (2*m + 1)) / 6;
-    return s;
+    return m*m + Tong(m-1);
     } else {
-        return 0;
+    return 0;
     }
     
 }
 
+//Tính tổ hợp chập k của n phần tử:
 int GiaiThua (int n) {
-    int s = 1;
-        for (int i = 1; i <= n; i++) 
-        s *= i;
-        return s;
+    if (n>0) {
+        return n + GiaiThua(n-1);
+    } else {
+        return 0;
+    }
 }
 
 int ToHop (int n, int k) {
     if (n == k || k == 0) 
     return 1;
     else {
-        return (GiaiThua(n) /  (GiaiThua(k) * GiaiThua(n - k))); 
+        return (ToHop (n-1, k-1) + ToHop (n-1,k)); 
     }
 }
 

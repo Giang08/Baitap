@@ -9,11 +9,26 @@ bool Lasonguyento(int number) {
     return true;
 }
 
+bool Mangdoixung (int a[], int n) {
+    for (int i = 0; i < n/2; i++) {
+        if (a[i] != a[n-i-1]) {
+            return false;
+    }
+    } return true;
+}
+
+bool Mangtangdan (int a[], int n) {
+    for (int i = 0; i <= n; i++) {
+        if (a[i] < a[i-1]) {
+            return true;
+        }
+    } return false;
+}
 
 
 void Bai1 ()
 {
-    //Bai 1,2
+    //Tìm giá trị nhỏ nhất và lớn nhất trong mảng
     int dayso[] ={2222, 3, 19, 88, 12321, 28, 4774, 31, 141, 25};
     int n = sizeof (dayso) / sizeof (dayso[0]);
     int min = dayso[0];
@@ -34,7 +49,7 @@ void Bai1 ()
 
 void Bai3 ()
 { 
-    //Bai 3
+    //Tìm số nguyên tố trong mảng
    
     int dayso[] ={2222, 3, 19, 88, 12321, 28, 4774, 31, 141, 25};
     int n = sizeof (dayso) / sizeof (dayso[0]);
@@ -49,7 +64,7 @@ void Bai3 ()
 
 void Bai4 ()
 {
-    //Bai 4
+    //Tìm số trung bình cộng của tất cả các số trong mảng
     int dayso[] ={2222, 3, 19, 88, 12321, 28, 4774, 31, 141, 25};
     int n = sizeof (dayso) / sizeof (dayso[0]);
     cout << "So trung binh cong cua mang la: " << (dayso[0] + dayso[1] + dayso[2] + dayso[3] + dayso[4] + dayso[5] + dayso[6] + dayso[7] + dayso[8] + dayso[9])/10;
@@ -57,8 +72,29 @@ void Bai4 ()
 
 }
 
+void Bai5 () 
+{
+int n = 7;
+int a[7] = {1,2,3,4,3,2,1};
+if (Mangdoixung(a,n)) {
+    cout <<"Day la mang doi xung.";
+} else {
+    cout <<"Day khong phai ma doi xung.";
+}
+}
+
+void Bai9 ()
+{
+    int n = 10;
+    int a[] ={1,2,3,4,5,6,7,8,9,10};
+    if (Mangtangdan(a,n)) {
+        cout <<"Day la mang tang dan.";
+    } else {
+        cout <<"Day khong phai mang tang dan.";
+    }
+}
 
 int main()
 {
-    Bai5 ();
+    Bai9 ();
 }

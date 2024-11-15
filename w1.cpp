@@ -4,7 +4,7 @@ using namespace std;
 
 void Bai1 ()
 {
-    //Bai 1
+    //Tìm giá trị trung bình cộng của 4 số.
     cout <<"Nhap 4 so\n";
    float a,b,c,d,trbinh;
     cin >> a;
@@ -17,7 +17,7 @@ void Bai1 ()
 
 void Bai2 ()
 {
-   //Bai 2
+   //Cho người dùng nhập 3 số. Sau đó in ra số lớn nhất.
     float e,f,g,max,min;
     cout <<"Nhap so e "; cin >> e;
     cout <<"Nhap so f "; cin >> f;
@@ -33,7 +33,7 @@ void Bai2 ()
 
 void Bai3 ()
 {
- //Bai 3
+ //Chuyển đổi độ C thành độ K và độ F.
     cout <<"Hay nhap do C\n";
     double C,F,K;
     cin >> C;
@@ -46,7 +46,7 @@ void Bai3 ()
  
 void Bai4 ()
 {
-//Bai 4
+//Đảo ngược số. Ví dụ, số đảo ngược của 123 là 321.
     // khai báo biến số nguyên M
     int M;
     // xuất ra màn hình và nhập giá trị M
@@ -69,7 +69,7 @@ void Bai4 ()
 
 void Bai5 ()
 {
-    //Bai 5,6
+    //Nhập một số làm số hàng (hay độ rộng theo chiều ngang) của tam giác rồi sau đó vẽ tam giác sao với độ rộng đó và vẽ tam giác đều
     int rows;
     cout << "Nhap vao so hang: ";
     cin >> rows;
@@ -89,7 +89,7 @@ void Bai5 ()
 
 void Bai7 ()
 {
-    //Bai 7
+    //Nhập một số nguyên n. Tính tổng của n số lẻ đầu tiên trong dãy số nguyên
     int N;
     int sum;
     cout<< "Nhap so nguyen duong N "; cin >> N;
@@ -100,7 +100,7 @@ void Bai7 ()
 
 void Bai9 ()
 {
-      // Bai 9,10
+      //Tìm ước chung lớn nhất và bội chung nhỏ nhất của hai số.
  int a,b;
  int tich = 1;
  cout << "Hay nhap hai so a,b : "; cin >> a >> b;
@@ -118,7 +118,7 @@ void Bai9 ()
 
 void Bai11 ()
 {
-    //Bai 11
+    //Nhập số N, hãy in N số đầu tiên trong dãy Fibonacci.
     int N;
     cout << "Nhap so N: ";
     cin >> N;
@@ -145,7 +145,7 @@ void Bai11 ()
 
 void Bai12 ()
 {
-    // Bai 12
+    //Nhập số năm, in ra kết quả đây là năm nhuận hay không.
  int year;
  cout << "Nhap nam cua ban: "; cin >> year;
  if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
@@ -158,7 +158,7 @@ void Bai12 ()
 
 void Bai13 ()
 {
-//Bai 13
+//Nhập 3 số, kiểm tra đây có phải là 3 góc của tam giác hay không.
     int m,n,q;
     cout<<"Nhap 3 so: ";
     cin>> m >> n >> q;
@@ -172,7 +172,7 @@ void Bai13 ()
     
 void Bai14 ()
 {
-//Bai 14
+//Nhập số nhỏ hơn hoặc bằng 10. In giá trị của số vừa nhập bằng chữ
     int so;
     cout <<"Nhap mot so: "; cin >> so;
     
@@ -215,45 +215,18 @@ void Bai14 ()
 
 void Bai15 ()
 {
-//Bai 15
+//Nhập số tháng (nhỏ hơn 12), in ra tổng số ngày trong tháng đó.
     int  month;
     cout << "Nhap thang cua ban: "; cin >> month;
     switch(month) {
-        case 1:
+        case 1: case 3: case 5: case 7: case 8: case 10: case 12:
         cout << "Thang " << month <<"co 31 ngay\n";
         break;
         case 2:
         cout << "Thang " << month <<"co 28 ngay\n";
         break;
-        case 3:
-        cout << "Thang " << month <<"co 31 ngay\n";
-        break;
-        case 4:
+        case 4:case 6:case 9: case 11:
         cout << "Thang " << month <<"co 30 ngay\n";
-        break;
-        case 5:
-        cout << "Thang " << month <<"co 31 ngay\n";
-        break; 
-        case 6:
-        cout << "Thang " << month <<"co 30 ngay\n";
-        break;
-        case 7:
-        cout << "Thang " << month <<"co 31 ngay\n";
-        break;
-        case 8:
-        cout << "Thang " << month <<"co 31 ngay\n";
-        break;
-        case 9:
-        cout << "Thang " << month <<"co 30 ngay\n";
-        break;
-        case 10:
-        cout << "Thang " << month <<"co 31 ngay\n";
-        break;
-        case 11:
-        cout << "Thang " << month <<"co 30 ngay\n";
-        break;
-        case 12:
-        cout << "Thang " << month <<"co 31 ngay\n";
         break;
         default :
         cout <<"Khong nhan dien ";
@@ -263,7 +236,7 @@ void Bai15 ()
 
 void Bai16 ()
 {
-    //Bai 16
+    //Viết chương trình cho nhập 2 số và 1 phép toán. Hãy in ra kết quả của phép toán đó
     int num1,num2;
     char pheptoan;    
     cout<<"Hay nhap 2 so va 1 phep toan: \n";
@@ -290,7 +263,7 @@ void Bai16 ()
 
 void Bai17 ()
 {
-    //Bai 17
+    //Nhập một chuỗi bất kì, nếu nhập exit hoặc EXIT hoặc Exit thì thoát chương trình.
        string input;
        //Thực hiện vòng lặp liên tục cho đến khi gặp break:
        while (true) {
@@ -327,10 +300,9 @@ void Bai18 ()
     
 }
 
-
 void Bai19 ()
 {
-//Bai 19
+//Viết chương trình kiểm tra số nhập vào có phải là số hoàn hảo hay không
  int m;
  int tong = 0;
  cout << "Nhap mot so: ";
@@ -349,7 +321,7 @@ void Bai19 ()
 
 void Bai20 ()
 {
-    //Bai 20
+    //Nhập số nguyên dương n. Hãy viết chương trình tính giai thừa của n
     int n;
     cout << "Hay nhap so n: ";
     cin >> n;
@@ -368,7 +340,7 @@ void Bai20 ()
 
 void Bai21 ()
 {
-    //Bai 21
+    //Tìm nghiệm phương trình bậc 2: ax2 + bx + c = 0
         int a,b,c;;
         cout << "Nhap phuong trinh bac 2: "; cin  >> a; cout <<"x^2" << "+";
         cin >> b; cout <<"x" << "+";
@@ -390,7 +362,7 @@ void Bai21 ()
 
 void Bai22 ()
 {
-    //Bai 22
+    //Nhập một số. Nếu số đó là số nguyên tố thì thoát chương trình, nếu không cho người dùng nhập lại.
    while(true) {
       int number;
       cout << "Hay nhap mot so lon hon 0: ";
@@ -426,7 +398,7 @@ void Bai22 ()
 
 void Bai23 ()
 {
-    //Bai 23
+    //Cho người dùng nhập một số dương n. In ra số chẵn từ 0 đến n.
         cout<< "Hay nhap so cua ban: ";
         int F;
         cin >> F;
@@ -440,7 +412,7 @@ void Bai23 ()
 
 void Bai24 ()
 {
-    //Bai 24
+    //Viết chương trình nhập một số n (0<n<10), sau đó in ra màn hình bảng cửu chương n.
         int m;
         int tich;
         cout <<"Hay nhap vao mot so: "; cin >> m;
@@ -454,13 +426,9 @@ void Bai24 ()
         
 }
 
-void Bai25 ()
-{
-   
-}
 void Bai26 ()
 {
-//Bai 26
+//Viết chương trình nhập một số n > 0. Sau đó in ra ước số n.
  int q;
  cout <<"Nhap mot so: ";
  cin >> q;
